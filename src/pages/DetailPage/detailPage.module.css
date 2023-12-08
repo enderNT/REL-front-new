@@ -1,0 +1,64 @@
+.btnClose {
+  background-color: black;
+  color: #fff !important;
+  border-width: 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.propertyInfoContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.principalTitle {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.price {
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.propertyName {
+  font-size: 0.8rem !important;
+  text-align: left;
+}
+
+.collapse {
+  text-align: left;
+}
+
+.collapseLabel {
+  font-weight: bold;
+}
+
+.antCarousel {
+  max-width: 100vh;
+  height: 80vh;
+}
+
+.slickDots {
+  bottom: -20px !important;
+  background-color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.centeredImageCarousel {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageCarousel {
+  max-height: 80vh;
+}
