@@ -1,8 +1,9 @@
-import { Carousel, Collapse, Flex, Image } from "antd";
+import { Button, Carousel, Collapse, Flex, Image } from "antd";
 import Layout, { Content } from "antd/es/layout/layout";
 import { Typography } from "antd";
 import noImage from "../../assets/images/no-image.webp";
 import {
+  btnClose,
   content,
   antCarousel,
   slickDots,
@@ -107,6 +108,7 @@ const DetailPage = () => {
     <>
       <Layout>
         <Content className={content}>
+          <Button className={btnClose}>X</Button>
           <Image
             height={"100vh"}
             src="https://loremipsum.io/assets/images/lorem-ipsum-generator-cicero-engraving.png"
