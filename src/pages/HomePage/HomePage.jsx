@@ -1,5 +1,3 @@
-import { Card } from "antd"
-import Meta from "antd/es/card/Meta"
 import Layout, { Content, Footer, Header } from "antd/es/layout/layout"
 import { HOME_PAGE_STRUCTURES } from "../utils/constants"
 import './HomePage-styles.css'
@@ -35,7 +33,6 @@ const HomePage = () => {
                             }
                         </div>
                     </div>
-
                     <div className="content__RecentPropsContainer">
                         <div className="recentProps__h3"><h3>{HOME_PAGE_STRUCTURES.MOST_RECENT_PROPS_ROW.H3}</h3></div>
                         <div className="recentProps__Cards">
