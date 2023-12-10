@@ -1,5 +1,15 @@
 #layout-content-row1-div {
     height: 12vh;
+    position: relative;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.content__SearchAppartmentsTyp {
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+    position: absolute;
 }
 
 #layout-content-row1-div-img {
@@ -8,18 +18,96 @@
     width: 100%;
 }
 
+/* CATEGORIES ROW STYLES */
+
+.content__CategoriesContainer {
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+}
+
 .categories__Cards {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0.2rem 0;
 }
 
+.categories__Text {
+    margin: 0.5rem 2%;
+    font-weight: 500;
+}
+
+
 .categories__CardCategory {
-    min-width: 440px;
+    min-width: 240px;
+    max-width: 340px;
     height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: large;
+    margin: 1rem 0;
 }
 
 .cardCategory__Img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 10%;
 }
+
+.cardCategory__elementCategoryP {
+    z-index: 1;
+    position: absolute;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+}
+
+/* RECENT PROPRERTIES ROW STYLES */
+
+.content__RecentPropsContainer {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.recentProps__h3 {
+    margin: 0 2%;
+}
+
+.recentProps__Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recentProp__Card {
+    min-width: 150px;
+    max-width: 250px;
+    min-height: 150px;
+    max-height: 250px;
+    border-radius: 5%;
+    margin: 1rem 0;
+}
+
+.cardImg__Container {
+    width: 100%;
+    border-radius: 5%;
+    height: 70%;
+}
+
+.recentProp__CardImg {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardText__Container {
+    padding-left: 0.5rem;
+}
+
+
