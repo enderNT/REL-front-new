@@ -1,0 +1,25 @@
+#layout-content-row1-div {
+    height: 12vh;
+}
+
+#layout-content-row1-div-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.categories__Cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories__CardCategory {
+    min-width: 440px;
+    height: 20vh;
+}
+
+.cardCategory__Img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
