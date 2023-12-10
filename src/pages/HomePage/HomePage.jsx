@@ -10,35 +10,28 @@ const HomePage = () => {
             <Layout>
                 <Header></Header>
                 <Content>
-                    <div
-                        id="layout-content-row1-div"
-                    >
+                    <div id="layout-content-row1-div">
                         <Typography level={2}>Buscar departamentos</Typography>
                         <img
                             id='layout-content-row1-div-img'
                             src={HOME_PAGE_STRUCTURES.BROWSER_APPARTMENTS_ROW.IMAGE} alt={HOME_PAGE_STRUCTURES.BROWSER_APPARTMENTS_ROW.TEXT}
                         />
                     </div>
-                    <Row
-                        justify='space-around'
-                        wrap
-                        className='content__RowCategories'
-                    >
-                        <div className="mis-categorias"><p>Categorias</p></div>
-                        {
-                            HOME_PAGE_STRUCTURES.CATEGORIES_STRUCTURE_ROW.map((element, index) => {
-                                return(
-                                    <Col key={index}
-                                    >
-                                        <div className='categories__CardCategory'>
+                    <div className="content__CategoriesContainer">
+                        <div className="categories__Text"><p>Categorias</p></div>
+                        <div className="categories__Cards">
+                            {
+                                HOME_PAGE_STRUCTURES.CATEGORIES_STRUCTURE_ROW.map((element, index) => {
+                                    return(
+                                        <div key={index} className='categories__CardCategory'>
                                             <p>{element.CATEGORY}</p>
                                             <img className='cardCategory__Img' src={element.IMAGE} alt={element.CATEGORY} />
                                         </div>
-                                    </Col>
-                                )
-                            })
-                        }
-                    </Row>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
                     <Row>
                         <Typography level={4}>Propiedades</Typography>
                         <Col span={6}>
