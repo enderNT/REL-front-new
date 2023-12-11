@@ -1,7 +1,7 @@
 import { HOME_PAGE_STRUCTURES } from "../../utils/constants"
 import './HomePage-styles.css'
 
-const HomePage = () => {
+export default function HomePage () {
     // const img = https://loremipsum.io/assets/images/lorem-ipsum-generator-cicero-engraving.png
     return (
         <>
@@ -54,5 +54,3 @@ const HomePage = () => {
         </>
     )
 }
-
-export default HomePage

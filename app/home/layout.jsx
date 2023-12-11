@@ -1,4 +1,4 @@
-import { Content, Footer, Header } from "antd/es/layout/layout";
+import { Content } from "antd/es/layout/layout";
 
 export default function HomePageLayout({ children }) {
     return (

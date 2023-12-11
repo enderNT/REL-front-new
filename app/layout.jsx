@@ -1,5 +1,6 @@
 import { Layout } from "antd";
-import { Header } from "antd/es/layout/layout";
+import { Footer, Header } from "antd/es/layout/layout";
+import './styles.css'
 
 export default function RootLayout({children}) {
     return (
@@ -8,6 +9,7 @@ export default function RootLayout({children}) {
                 <Layout>
                     <Header></Header>
                     {children}
+                    <Footer></Footer>
                 </Layout>
             </body>
         </html>
